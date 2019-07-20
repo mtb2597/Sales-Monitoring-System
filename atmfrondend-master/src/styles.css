@@ -1,0 +1,50 @@
+* {
+    font-size: 17pt;
+    padding: 2pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 18pt;
+}
+
+hr {
+    background-color: black;
+    border: 0pt;
+    height: 1pt;
+    margin: 0pt;
+    padding: 0pt;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+.button, input[type="submit"] {
+    border: none;
+    padding: 5pt 10pt;
+    margin: 5pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    border: 1pt solid gray;
+    border-radius: 3pt;
+    cursor: pointer;
+    background-color: white;
+}
+
+.error {
+    font-size: 10pt;
+    margin-bottom: 0;
+    color: red;
+}

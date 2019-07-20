@@ -1,0 +1,9 @@
+<div class="inputField">
+  <h1>Click to get the balance.</h1>
+  <div class="button" (click)="showBalance()">{{checkBalance}}</div>
+  <div *ngIf="balance">
+    <h2 class="head2">Balance Information : </h2>
+    <p class="balance">Available Balance : {{availableBalance}}</p>
+    <p class="balance">Total Balance : {{totalBalance}}</p>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.balance {
+    font-size: 20pt;
+}
+
+.head2 {
+    font-size: 22pt;
+}
+
+.inputField [class='button']:hover {
+    background-color: blue;
+    color: white;
+}

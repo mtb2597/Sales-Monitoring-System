@@ -1,0 +1,27 @@
+<div *ngIf="!showForm">
+  <h1 class="welcome">Welcome</h1>
+  <div class="button" (click)="openLogin()">Login </div>
+</div>
+
+<div *ngIf="showForm">
+  <h1>Welcome</h1>
+  <h2>Please Enter the following </h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label>
+      <p>Account Number:</p>
+      <input type="number" formControlName="accountNumber">
+      <div *ngIf="submitted && loginForm.controls.accountNumber.errors" class="error">
+        Your Account Number is required
+      </div>
+    </label>
+    <label>
+      <p>Account PIN:</p>
+      <input type="number" formControlName="accountPin">
+      <div *ngIf="submitted && loginForm.controls.accountPin.errors" class="error">
+        Your Account Pin is required
+      </div>
+    </label>
+    <br>
+    <input type="submit" value="Login">
+  </form>
+</div>

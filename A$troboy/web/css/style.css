@@ -1,0 +1,245 @@
+body{
+ font: 15px/1.5 Alegreya,Helvetica , sans-serif, comic;
+ padding: 0;
+ margin:0;
+ background-color:#f4f4f4;
+ }
+ 
+ /* Global*/
+ .container{
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
+ }
+ ul{
+   margin: 0;
+   padding: 0;
+ }
+ .button_1{
+   height: 38px;
+   background: #e8491d;
+   border: 0;
+   padding-left: 20px;
+   padding-right: 20px;
+   color: #ffffff;
+ }
+ .dark{
+   padding: 15px;
+   background:#35424a;
+  color: #ffffff;
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+ /* header*/
+ header{
+  //  background-image: url("../images/cool.jpg");
+
+   color: #ffffff;
+   padding-top: 50px;
+   padding-bottom: 20px;
+   min-height: 70px;
+   border-bottom: #e8491d 4px solid;
+}
+header a{
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header ul{
+  padding-left:0;
+  margin:0;
+  }
+  header li{
+  float:left;
+  display:inline;
+  padding : 0 20px 0 20px;
+  }
+  header #branding{
+    float: left;
+    }
+    header #branding h1{
+      margin:0;
+    }
+    header nav{
+      float: right;
+      margin-top:20px;
+      
+      
+      -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.6s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.6s;
+  -moz-animation-iteration-count: 1;
+  -o-animation-duration: 1s;
+  -o-animation-delay: 0.6s;
+  -o-animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-iteration-count:1
+    }
+header .highlight,header .current a{
+  color: #e8491d;
+  font-weight: bold;
+   }
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+/*sign up*/
+#lform{
+    float: left; padding-left:10%;
+}
+/*show case*/
+#showcase{ 
+  color: #ffffff;
+  text-align: center;
+}
+#showcase h1{
+  margin-top: 110px;
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+#showcase p{
+  font-size: 20px;
+}
+/*newsletter*/
+#newsletter,#signup{
+  padding: 15px;
+  color: #ffffff;
+  background: #35424a;
+}
+#newsletter h1{
+  float: left;
+}
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+ 
+  }
+  #newsletter input[type="email"],#signup input, .cool{
+    padding: 4px;
+    height: 25px;
+    width:250px;
+    color: #000000;
+  }
+  #newsletter input[type="password"]{
+    padding: 4px;
+    height: 25px;
+    width:250px;
+    color: #000000;
+  }
+/*Boxes*/
+#boxes{
+  margin-top:20px;
+  }
+#boxes .box{
+  float: left;
+  width:30%;
+  padding: 10px;
+ text-align: center;
+}
+#boxes .box img{
+  width: 90px;
+}
+/*slider*/
+
+/*sidebar*/
+aside#sidebar{
+  margin-top: 10px;
+  float: right;
+  width: 30%;
+}
+#main-col{
+  float: left;
+  width: 65%;
+}
+aside#sidebar .qoute input,aside#sidebar .qoute textarea{
+  padding: 5px;
+  width: 90%;
+}
+
+/*services*/
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  background-color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+/*footer*/
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background-color: #ed491d;
+  text-align: center;
+}
+
+
+#mobile_view{
+    display: none;
+    
+}
+/*media queries to set size for short page*/
+@media(max-width: 768px){
+/*  to display nothing when size is less than 768
+   body{
+    display:none;
+  }*/
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar
+  {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top:40px;
+    color:#33CCFE;
+    font-size: 20px;
+  }
+  #newsletter button, .qoute button,#bob{
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"], .qoute input, .qoute textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #newsletter form input[type="password"], .qoute input, .qoute textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  
+  #mobile_view{
+      display:block;
+      background-color:black;
+  }
+  #block1{
+      display:none;
+  }
+  #mobile_view button,#mobile_view input{margin-bottom: 5px;
+    width:100%;}
+  #bout{
+      display: none;
+  }
+  #lform{
+    left-padding:0;
+  }
+  
+
+
+}

@@ -1,0 +1,23 @@
+<div>
+  <div class="inputField" *ngIf="form">
+    <h1>Please enter a deposit amount in CENTS.</h1>
+    <form [formGroup]="amountForm">
+      <input type="number" formControlName="amount">
+      <div class="button" (click)="deposit()">Deposit Funds</div>
+      <div *ngIf="submitted && amountForm.controls.amount.errors" class="error">
+          Please enter the Amount.
+        </div>
+    </form>
+  </div>
+  <div *ngIf="!form">
+    <h1>A deposit envelope containing {{amountBalance}} has inserted.</h1>
+    <p>
+      <span *ngIf="recieved">
+        Your envelope has been received.
+        <br><br>
+        NOTE: The money just deposited will not be available until we verify the amount of any enclosed cash and your
+        checks clear.
+      </span>
+    </p>
+  </div>
+</div>

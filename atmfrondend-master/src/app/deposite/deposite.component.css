@@ -1,0 +1,4 @@
+.inputField [class="button"]:hover {
+    background-color: rgb(0, 240, 40);
+    color: black;
+}

@@ -1,0 +1,10 @@
+<ul>
+  <li *ngIf="!logged"><a routerLinkActive="active" routerLink="/">Home</a></li>
+  <label *ngIf="logged">
+    <li class="other"><a routerLinkActive="active" routerLink="/balance">Balance</a></li>
+    <li class="other"><a routerLinkActive="active" routerLink="/withdraw">Withdraw</a></li>
+    <li class="other"><a routerLinkActive="active" routerLink="/deposit">Deposit</a></li>
+    <li class="other" (click)="logout()"> <a routerLink="">Logout</a> </li>
+    <li class="userName"> <a routerLink="">{{userName}}</a> </li>
+  </label>
+</ul>

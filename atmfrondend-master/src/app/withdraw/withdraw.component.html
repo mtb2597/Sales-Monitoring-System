@@ -1,0 +1,16 @@
+<div>
+  <div class="inputField" *ngIf="!withdrawDone">
+    <h1> Withdrawal Amount : </h1>
+    <form [formGroup]="amountForm">
+      <input type="number" formControlName="amount">
+      <div class="button" (click)="withdraw()">Withdraw Funds</div>
+      <div *ngIf="submitted && amountForm.controls.amount.errors" class="error">
+        Please enter the Amount.
+      </div>
+    </form>
+  </div>
+  <div *ngIf="withdrawDone">
+    <h1> Withdrawal Comlpete. </h1>
+    <p *ngIf="dispensed"> Your cash has been dispensed. Please take your cash now. </p>
+  </div>
+</div>
